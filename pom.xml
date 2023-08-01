@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- обязательная часть xml, которая пишется во сех файлах -->
+<!-- четко регламентирует набор функционала, который используется в pom файле (набор тегов) -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion><!-- версия maven файла, которую мы используем -->
+
+    <groupId>ru.netology</groupId>
+    <artifactId>Maven educational project</artifactId>
+    <version>1.0-SNAPSHOT</version><!-- отвечает за версионирование проекта "процесс ведения и документирования
+    версий проекта" -->
+
+    <properties><!-- указываются основные параметры, которые используются в приложении -->
+        <maven.compiler.source>11</maven.compiler.source><!-- версия java используемая для компиляции -->
+        <maven.compiler.target>11</maven.compiler.target><!-- версия с которой будет работать наша программа, платформа
+         на которой она будит исполняться -->
+        <version>1</version><!-- можем это использовать по всему pom файлу при помощи конструкции ${version} -->
+        <version.guava>32.1.1-jre</version.guava><!-- можем это использовать по всему pom файлу при помощи конструкции
+         ${version.guava} -->
+    </properties>
+
+    <dependencies><!-- зависимости т.е. библиотеки, которые мы испоьзуем в рамках нашего проекта  -->
+        <!-- для подключения необычных зависимостей -->
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${version.guava}</version><!-- версию guava смотри в <properties>-->
+        </dependency>
+
+    </dependencies>
+
+</project>
