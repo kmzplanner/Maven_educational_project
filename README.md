@@ -13,3 +13,8 @@
 ```
 
 4. Вставили в ```<dependencies> </dependencies>``` pom.xml
+5. Внесли версию guava в ```<properties>
+   <version.guava>32.1.1-jre</version.guava>
+   </properties>```,и в ```<dependency>
+   <version>${version.guava}</version>
+   </dependency>``` соответственно.
