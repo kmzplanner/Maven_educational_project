@@ -18,3 +18,4 @@
    </properties>```,и в ```<dependency>
    <version>${version.guava}</version>
    </dependency>``` соответственно.
+6. Сменили версию guava с 32.1.1 на 32.1.2 в ```</properties> </properties>```
