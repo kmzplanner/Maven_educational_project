@@ -7,8 +7,12 @@
     <!-- блок идентифицирующий наш проект -->
     <groupId>ru.netology</groupId>
     <artifactId>Maven_educational_project</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version><!-- отвечает за версионирование проекта "процесс ведения и документирования
     версий проекта" -->
+    <modules>
+        <module>submaven</module>
+    </modules>
 
     <properties><!-- указываются основные параметры, которые используются в приложении -->
         <maven.compiler.source>11</maven.compiler.source><!-- версия java используемая для компиляции -->
